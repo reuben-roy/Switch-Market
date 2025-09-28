@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Switch Market</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <meta
+      name="description"
+      content="A fast, accessible D3-powered shop demo called Switch Market."
+    />
+    <meta name="theme-color" content="#0ea5e9" />
+    <link rel="icon" href="/favicon.ico" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav container" aria-label="Primary">
+        <a class="brand" href="#">Switch Market</a>
+        <button
+          class="nav-toggle"
+          aria-expanded="false"
+          aria-controls="nav-menu"
+          aria-label="Toggle menu"
+        >
+          ☰
+        </button>
+        <ul id="nav-menu" class="menu">
+          <li><a href="#">Home</a></li>
+          <li><a href="#shop">Shop</a></li>
+          <li><a href="#cart">Cart</a></li>
+        </ul>
+        <form class="search" role="search" autocomplete="off">
+          <input
+            id="searchInput"
+            type="search"
+            placeholder="Search products..."
+            aria-label="Search products"
+          />
+        </form>
+      </nav>
+    </header>
+
+    <main class="container">
+      <section id="shop" class="product-section">
+        <h1>Products</h1>
+        <div id="product-grid" class="product-grid" aria-live="polite"></div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">© <span id="year"></span> Switch Market</div>
+    </footer>
+
+    <noscript>
+      JavaScript is required to use Switch Market. Please enable it and reload.
+    </noscript>
+    <script defer src="https://d3js.org/d3.v7.min.js"></script>
+    <script defer src="./app.js"></script>
+  </body>
+</html>

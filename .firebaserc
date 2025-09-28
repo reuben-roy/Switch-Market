@@ -1,0 +1,9 @@
+{
+  "projects": {
+    "default": "switch-market-e539a",
+    "dev": "switch-market-e539a",
+    "staging": "switch-market-e539a"
+  },
+  "targets": {},
+  "etags": {}
+}
